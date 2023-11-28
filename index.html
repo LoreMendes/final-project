@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
 
@@ -20,29 +23,44 @@
 
   <header>
 
-    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-light text-light hstack gap-3" data-bs-theme="light">
       <div class="container">
-        <li>
-          <i class="fa fa-envelope" style="font-size:36px;color:white"></i>
-        </li>
-        <li>
-          <i class="fa fa-whatsapp" style="font-size:36px;color:white"></i>
-        </li>
-        <li class="nav-item">
-          <i class="fa fa-facebook-f" style="font-size:36px;color:white"></i>
-        </li>
-        <li class="nav-item">
-          <i class="fa fa-instagram" style="font-size:36px;color:white"></i>
-        </li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-envelope" style="font-size:36px;color:white"></i>
+            </a>
+          </li>
+          <div class="vr"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+            <i class="fa fa-whatsapp" style="font-size:36px;color:white"></i>
+            </a>
+          </li>
+          <div class="vr"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-facebook-f" style="font-size:36px;color:white"></i>
+            </a>
+          </li>
+          <div class="vr"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-instagram" style="font-size:36px;color:white"></i>
+            </a>
+          </li>
+        </ul>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+        <div class="collapse navbar-collapse text-light" id="navbarNav">
+          <ul class="navbar-nav text-light ms-auto">
+            <li class="nav-item text-light">
               <a class="nav-link active" aria-current="page" href="#">About Us</a>
             </li>
+            <div class="vr"></div>
             <li class="nav-item">
               <a class="nav-link" href="#">Customer Support</a>
             </li>
+            <div class="vr"></div>
             <li class="nav-item">
               <a class="nav-link" href="#">EN/SP</a>
             </li>
@@ -51,8 +69,8 @@
       </div>
     </nav>
     
-    <div class="container">
-      <img src="images/logo.jpg" alt="">
+    <div class="container middle-nav-container">
+      <img src="images/logo.jpg" class="img-fluid justifycontent-center" style="max-width: 20%;" alt="Centered Image">
 
       <title>Barra de Busca Cinza Bootstrap</title>
   <style>
@@ -66,30 +84,35 @@
       color: #6c757d; /* cor do texto de espaço reservado */
     }
   </style>
-</head>
-<body>
 
-<div class="container mt-4">
+<div class="search-container">
   <form class="form-inline">
     <input class="form-control custom-search-bar mr-sm-2" type="search" placeholder="What kind of gate are looking for?" aria-label="Pesquisar">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
+  <a class="btn btn-primary" href="#" role="button">
+    <i class="fa fa-shopping-cart" style="font-size:36px;color:white"></i>
+  </a>
 </div>
     </div>
 
-    <div class="container py-5">
-      <a class="btn btn-primary" href="#" role="button">
-        <i class="fa fa-shopping-cart" style="font-size:36px;color:white"></i>
-      </a>
-    </div>
-
-    <div class="container py-5">
-      <a class="btn btn-primary" href="#" role="button">Gates</a>
-      <button class="btn btn-primary">Fences</button>
-      <button class="btn btn-primary">Railings</button>
-      <button class="btn btn-primary">Acessories</button>
-  
-    </div>
+    <ul class="navbar navbar-expand-md navbar-light text-light hstack gap-3 justify-content-center" data-bs-theme="light">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Gates</a>
+      </li>
+      <div class="vr"></div>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Fences</a>
+      </li>
+      <div class="vr"></div>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Railings</a>
+      </li>
+      <div class="vr"></div>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Acessories</a>
+      </li>
+    </ul>
 
   </header>
   
@@ -337,35 +360,37 @@
       </section>
 
         </main>
-    
-        <footer class="bg-dark text-white" data-bs-theme="dark">
-          <div class="container py-3 text-center">
-            <img src="images/instagram-logo.jpg" alt="...">
+        
+        <footer>
+          <div class="container left-block">
             <p>+1 (613) 123-456</p>
             <p>LAOrnamental@aol.com</p>
             <p>3708 NW 82nd St, Miami, FL 33147, United States</p> 
           <p>Our office hours are from 8am to 6pm, from Monday to Friday</p>
+            </div>
+
+          <div class="container center-block">  
           <p>Visit our Social Media</p>
-          <div class="container">
-            <li>
-              <i class="fa fa-whatsapp" style="font-size:36px;color:white"></i>
-            </li>
             <li class="nav-item">
               <i class="fa fa-facebook-f" style="font-size:36px;color:white"></i>
             </li>
             <li class="nav-item">
               <i class="fa fa-instagram" style="font-size:36px;color:white"></i>
             </li>
-            </div>
+          </div>
+          
+          <div class="container center-block">
           <p>About us</p>
           <p>Our Materials</p>
           <p>Color Chart</p>
           <p>Customer Support</p>
           <p>Our Policies</p>
           <p>Contact Us</p>
-          <p>Aliaessi nihilla endi volupidemque magnimint archici psapiento derro mi, ut vene invelendunt volorib uscipsam in re expe dolorro doloritae. Sernatiatio. Ut anis nonseque laborporatem lis nonsequibus experem poribus et, as conse lautaecaero ellaccabores molorep erspidessit hillorum fugia ipsam faccuptis nobitem fugit, cus ex excerum.</p> 
-          <p class="mb-0">&copy; 2023 L.A. Ornamentals</p>
+          </div>
 
+          <div class="container right-block">
+          <p>Aliaessi nihilla endi volupidemque magnimint archici psapiento derro mi, ut vene invelendunt volorib uscipsam in re expe dolorro doloritae. Sernatiatio. Ut anis nonseque laborporatem lis nonsequibus experem poribus et, as conse lautaecaero ellaccabores molorep erspidessit hillorum fugia ipsam faccuptis nobitem fugit, cus ex excerum.</p> 
+          <p class="mb-0">© 2023 L.A. Ornamentals</p>
           </div>
         </footer>
     
@@ -374,6 +399,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
       </body>
     </html>
